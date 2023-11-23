@@ -1,0 +1,52 @@
+
+body {
+  padding-top: 20px;
+  background-color: #454545;
+}
+
+.container {
+  color: rgb(156, 166, 170);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#video-player {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.control-buttons {
+  margin-top: 20px;
+}
+
+.control-buttons button {
+  margin: 0 10px;
+}
+/* Estilos personalizados para o breadcrumb */
+.breadcrumb {
+  background-color: transparent; /* torna o fundo transparente */
+  padding: 8px 0;
+  margin: 0;
+}
+
+.breadcrumb-item {
+  color: rgb(156, 166, 170);
+}
+
+.breadcrumb-item a {
+  color: rgb(156, 166, 170);
+}
+
+.breadcrumb-item.active {
+  color: white; /* cor para o item ativo */
+}
+
+.breadcrumb-item.active a {
+  color: white; /* cor para o link do item ativo */
+}
+
+.breadcrumb-item i.material-icons {
+  margin-right: 5px;
+  font-size: 1.2em;
+}

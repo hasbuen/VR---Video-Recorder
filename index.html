@@ -1,0 +1,64 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="icon" href="_images/python-icon.ico">
+  <link rel="stylesheet" href="_assets/style.css">
+  <script src="_linkers/getPath.js" charset="utf-8"></script>
+  <script src="_utils/closeApp.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <!-- Botão de Fechar -->
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page"><a href="#"><i class="material-icons">home</i>Voltar</a></li>
+      <li class="breadcrumb-item" ><a href="_views/config.html"><i
+            class="material-icons">settings</i> Configurações</a></li>
+    </ol>
+
+    <button class="btn btn-danger rounded btn-sm pull-right" onclick="closeApp()">
+      <i class="material-icons">close</i>
+    </button>
+  </nav>
+
+  <div class="container">
+
+      <div class="card bg-dark text-center">
+        <div class="card-header">
+          <h1>Video Recorder</h1>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">
+
+
+            <video id="video-player" controls></video>
+
+          </h5>
+          <p class="card-text">
+
+          <div class="control-buttons">
+            <button class="btn btn-success" onclick="start()"><i class="material-icons">play_arrow</i></button>
+            <button class="btn btn-warning" onclick="pause()"><i class="material-icons">pause</i></button>
+            <button class="btn btn-danger" onclick="stop()"><i class="material-icons">stop</i></button>
+          </div>
+
+          </p>
+
+        </div>
+        <div class="card-footer">
+          <p><a href="https://github.com/hasbuen" target="_blank" class="link-info">
+              GitHub Cesar Bueno / <span class="badge text-bg-primary">V.1.0.0</span>
+            </a></p>
+
+        </div>
+      </div>
+
+  </div>
+
+
+</body>
